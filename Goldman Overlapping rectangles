@@ -1,0 +1,16 @@
+class Solution {
+  public:
+    int doOverlap(int L1[], int R1[], int L2[], int R2[]) {
+        // code here
+        int x=0;
+        int y=1;
+        if(R1[x]<L2[x]) return 0;
+        else if(R2[x]<L1[x]) return 0;
+        else if(R1[y]>L2[y]) return 0;
+        else if(R2[y]>L1[y]) return 0;
+        else{
+            return 1;
+        }
+        
+    }
+};
